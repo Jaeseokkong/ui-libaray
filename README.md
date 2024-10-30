@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# UI Component Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 소개
+이 프로젝트는 프론트엔드 개발에서 자주 사용하는 **UI 컴포넌트**들을 직접 구현하고, 이를 라이브러리 형태로 구성하여 다양한 프로젝트에서 **재사용 가능한 컴포넌트** 모음을 제공합니다. `React`와 `styled-components`를 사용해 컴포넌트를 모듈화하고, `Storybook`을 통해 시각적 문서화를 진행하여, 손쉽게 컴포넌트들을 테스트하고 활용할 수 있습니다.
 
-## Available Scripts
+### 배포 주소
+[]()  
 
-In the project directory, you can run:
+### 주요 기능
+- **재사용성**: 다양한 스타일 옵션을 가진 컴포넌트로, 다른 프로젝트에서도 쉽게 활용할 수 있습니다.
+- **문서화**: `Storybook`을 사용하여 각 컴포넌트의 시각적 미리보기 및 문서화를 제공합니다.
+- **유연한 스타일링**: `styled-components`를 통해 컴포넌트 스타일을 확장하고 관리하기 편리합니다.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 프로젝트 구조
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 디렉토리 구조
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```plaintext
+my-ui-library
+├── src
+│   ├── components
+│   │   ├── Button
+│   │   │   ├── Button.js
+│   │   │   ├── Button.stories.js
+│   │   │   └── Button.test.js
+│   │   ├── Modal
+│   │   ├── Dropdown
+│   │   └── index.js
+│   ├── utils
+│   ├── App.js
+│   └── index.js
+├── .storybook
+│   ├── main.js
+│   ├── preview.js
+├── package.json
+└── README.md
